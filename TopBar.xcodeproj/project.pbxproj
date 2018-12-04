@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		E265DFEC21B6ED1100F2FD5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265DFEB21B6ED1100F2FD5A /* AppDelegate.swift */; };
-		E265DFEE21B6ED1100F2FD5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265DFED21B6ED1100F2FD5A /* ViewController.swift */; };
 		E265DFF121B6ED1100F2FD5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E265DFEF21B6ED1100F2FD5A /* Main.storyboard */; };
 		E265DFF321B6ED1400F2FD5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E265DFF221B6ED1400F2FD5A /* Assets.xcassets */; };
 		E265DFF621B6ED1400F2FD5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E265DFF421B6ED1400F2FD5A /* LaunchScreen.storyboard */; };
 		E265E00121B6ED1400F2FD5A /* TopBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E00021B6ED1400F2FD5A /* TopBarTests.swift */; };
 		E265E00C21B6ED1400F2FD5A /* TopBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E00B21B6ED1400F2FD5A /* TopBarUITests.swift */; };
+		E265E01A21B6F10200F2FD5A /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01921B6F10200F2FD5A /* TestTableViewController.swift */; };
+		E265E01E21B6F54500F2FD5A /* Resultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01B21B6F54400F2FD5A /* Resultat.swift */; };
+		E265E01F21B6F54500F2FD5A /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01C21B6F54400F2FD5A /* Module.swift */; };
+		E265E02021B6F54500F2FD5A /* Cursus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01D21B6F54500F2FD5A /* Cursus.swift */; };
+		E265E02221B6F56900F2FD5A /* ModuleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E02121B6F56900F2FD5A /* ModuleTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +40,6 @@
 /* Begin PBXFileReference section */
 		E265DFE821B6ED1100F2FD5A /* TopBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TopBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E265DFEB21B6ED1100F2FD5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E265DFED21B6ED1100F2FD5A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E265DFF021B6ED1100F2FD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E265DFF221B6ED1400F2FD5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E265DFF521B6ED1400F2FD5A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,11 @@
 		E265E00721B6ED1400F2FD5A /* TopBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TopBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E265E00B21B6ED1400F2FD5A /* TopBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUITests.swift; sourceTree = "<group>"; };
 		E265E00D21B6ED1400F2FD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E265E01921B6F10200F2FD5A /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
+		E265E01B21B6F54400F2FD5A /* Resultat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resultat.swift; path = ../../resultat_module_cursus_swift/Resultat.swift; sourceTree = "<group>"; };
+		E265E01C21B6F54400F2FD5A /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Module.swift; path = ../../resultat_module_cursus_swift/Module.swift; sourceTree = "<group>"; };
+		E265E01D21B6F54500F2FD5A /* Cursus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cursus.swift; path = ../../resultat_module_cursus_swift/Cursus.swift; sourceTree = "<group>"; };
+		E265E02121B6F56900F2FD5A /* ModuleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,15 @@
 			isa = PBXGroup;
 			children = (
 				E265DFEB21B6ED1100F2FD5A /* AppDelegate.swift */,
-				E265DFED21B6ED1100F2FD5A /* ViewController.swift */,
 				E265DFEF21B6ED1100F2FD5A /* Main.storyboard */,
 				E265DFF221B6ED1400F2FD5A /* Assets.xcassets */,
 				E265DFF421B6ED1400F2FD5A /* LaunchScreen.storyboard */,
 				E265DFF721B6ED1400F2FD5A /* Info.plist */,
+				E265E01921B6F10200F2FD5A /* TestTableViewController.swift */,
+				E265E01D21B6F54500F2FD5A /* Cursus.swift */,
+				E265E01C21B6F54400F2FD5A /* Module.swift */,
+				E265E01B21B6F54400F2FD5A /* Resultat.swift */,
+				E265E02121B6F56900F2FD5A /* ModuleTableViewController.swift */,
 			);
 			path = TopBar;
 			sourceTree = "<group>";
@@ -256,8 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E265DFEE21B6ED1100F2FD5A /* ViewController.swift in Sources */,
 				E265DFEC21B6ED1100F2FD5A /* AppDelegate.swift in Sources */,
+				E265E01F21B6F54500F2FD5A /* Module.swift in Sources */,
+				E265E01E21B6F54500F2FD5A /* Resultat.swift in Sources */,
+				E265E02221B6F56900F2FD5A /* ModuleTableViewController.swift in Sources */,
+				E265E02021B6F54500F2FD5A /* Cursus.swift in Sources */,
+				E265E01A21B6F10200F2FD5A /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
