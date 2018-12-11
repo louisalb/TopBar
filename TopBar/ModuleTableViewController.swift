@@ -7,16 +7,18 @@
 //
 
 import UIKit
+import SQLite
 
 class ModuleTableViewController: UITableViewController {
     
     var tab:[String] = ["TM","CS","ST"]
-    var cursus:[Module]=[]
-    let c = Cursus()
+    var profil:[Module] = []
+    
     var identifiantModuleCellule = "celluleModule"
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.cursus = c.getModules()
+
+        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -39,7 +41,8 @@ class ModuleTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return cursus.count
+        
+        return profil.count
     }
     
     override func tableView(_ tableView:UITableView,titleForHeaderInSection section:Int) -> String?{
@@ -49,9 +52,9 @@ class ModuleTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: identifiantModuleCellule, for: indexPath)
         
-        cell.textLabel?.text = (cursus[indexPath.item].sigle)
+        cell.textLabel?.text = (profil[indexPath.item].sigle)
         
-        cell.detailTextLabel?.text = cursus[indexPath.item].categorie + " " + String(cursus[indexPath.item].credit) + " " + String(cursus[indexPath.item].resultat.rawValue)
+        cell.detailTextLabel?.text = profil[indexPath.item].categorie + " " + String(profil[indexPath.item].parcours) + " " + String(profil[indexPath.item].credit) + " " + String(profil[indexPath.item].resultat.rawValue)
         return cell
     }
     

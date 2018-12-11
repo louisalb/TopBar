@@ -17,13 +17,13 @@ public class Cursus {
     
     init() {
         profil = []
-        ajoute(m:Module.init(sigle: "LO07", categorie: "TM", credit: 6, resultat: Resultat.A))
-        ajoute(m: Module.init(sigle: "IF26", categorie: "TM", credit: 6, resultat: Resultat.B))
-        ajoute(m: Module.init(sigle: "NF19", categorie: "TM", credit: 6, resultat: Resultat.C))
-        ajoute(m: Module.init(sigle: "NF16", categorie: "CS", credit: 6, resultat: Resultat.A))
-        ajoute(m: Module.init(sigle: "ST09", categorie: "ST", credit: 30, resultat: Resultat.B))
-        ajoute(m: Module.init(sigle: "IF10", categorie: "CS", credit: 6, resultat: Resultat.D))
-        ajoute(m: Module.init(sigle: "ST10", categorie: "ST", credit: 30, resultat: Resultat.C))
+        ajoute(m:Module.init(sigle: "LO07", categorie: "TM", credit: 6, resultat: Resultat.A,parcours: "TCBR"))
+        ajoute(m: Module.init(sigle: "IF26", categorie: "TM", credit: 6, resultat: Resultat.B, parcours: "TC"))
+        ajoute(m: Module.init(sigle: "NF19", categorie: "TM", credit: 6, resultat: Resultat.C, parcours: "BR"))
+        ajoute(m: Module.init(sigle: "NF16", categorie: "CS", credit: 6, resultat: Resultat.A,parcours: "TCBR"))
+        ajoute(m: Module.init(sigle: "ST09", categorie: "ST", credit: 30, resultat: Resultat.B,parcours: "TCBR"))
+        ajoute(m: Module.init(sigle: "IF10", categorie: "CS", credit: 6, resultat: Resultat.D,parcours: "TC"))
+        ajoute(m: Module.init(sigle: "ST10", categorie: "ST", credit: 30, resultat: Resultat.C,parcours: "BR"))
     }
     
     func getSigles() -> [String] {

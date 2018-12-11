@@ -14,22 +14,25 @@ public class Module  {
     var categorie: String
     var credit: Int
     var resultat: Resultat
+    var parcours: String
     
     init() {
         sigle = "?"
         categorie = "?"
         credit = 0
         resultat = Resultat.A
+        parcours = "?"
     }
     
-    init(sigle: String, categorie: String, credit: Int, resultat: Resultat) {
+    init(sigle: String, categorie: String, credit: Int, resultat: Resultat, parcours: String) {
         self.sigle = sigle
         self.categorie = categorie
         self.credit = credit
         self.resultat = resultat
+        self.parcours = parcours
     }
     
     public var descriptor: String {
-        return "Module(\(sigle),\(categorie),\(credit),\(resultat))"
+        return "Module(\(sigle),\(categorie),\(credit),\(resultat),\(parcours))"
     }
 }
