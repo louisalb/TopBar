@@ -14,10 +14,10 @@
 		E265E00121B6ED1400F2FD5A /* TopBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E00021B6ED1400F2FD5A /* TopBarTests.swift */; };
 		E265E00C21B6ED1400F2FD5A /* TopBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E00B21B6ED1400F2FD5A /* TopBarUITests.swift */; };
 		E265E01A21B6F10200F2FD5A /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01921B6F10200F2FD5A /* TestTableViewController.swift */; };
-		E265E01E21B6F54500F2FD5A /* Resultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01B21B6F54400F2FD5A /* Resultat.swift */; };
-		E265E01F21B6F54500F2FD5A /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01C21B6F54400F2FD5A /* Module.swift */; };
-		E265E02021B6F54500F2FD5A /* Cursus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E01D21B6F54500F2FD5A /* Cursus.swift */; };
 		E265E02221B6F56900F2FD5A /* ModuleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E265E02121B6F56900F2FD5A /* ModuleTableViewController.swift */; };
+		E2BCA72521BFD0C90087A49C /* Module.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA72221BFD0C80087A49C /* Module.swift */; };
+		E2BCA72621BFD0C90087A49C /* Cursus.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA72321BFD0C90087A49C /* Cursus.swift */; };
+		E2BCA72721BFD0C90087A49C /* Resultat.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCA72421BFD0C90087A49C /* Resultat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +51,10 @@
 		E265E00B21B6ED1400F2FD5A /* TopBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarUITests.swift; sourceTree = "<group>"; };
 		E265E00D21B6ED1400F2FD5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E265E01921B6F10200F2FD5A /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
-		E265E01B21B6F54400F2FD5A /* Resultat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resultat.swift; path = ../../resultat_module_cursus_swift/Resultat.swift; sourceTree = "<group>"; };
-		E265E01C21B6F54400F2FD5A /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Module.swift; path = ../../resultat_module_cursus_swift/Module.swift; sourceTree = "<group>"; };
-		E265E01D21B6F54500F2FD5A /* Cursus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cursus.swift; path = ../../resultat_module_cursus_swift/Cursus.swift; sourceTree = "<group>"; };
 		E265E02121B6F56900F2FD5A /* ModuleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleTableViewController.swift; sourceTree = "<group>"; };
+		E2BCA72221BFD0C80087A49C /* Module.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Module.swift; sourceTree = "<group>"; };
+		E2BCA72321BFD0C90087A49C /* Cursus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cursus.swift; sourceTree = "<group>"; };
+		E2BCA72421BFD0C90087A49C /* Resultat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resultat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,10 +111,10 @@
 				E265DFF421B6ED1400F2FD5A /* LaunchScreen.storyboard */,
 				E265DFF721B6ED1400F2FD5A /* Info.plist */,
 				E265E01921B6F10200F2FD5A /* TestTableViewController.swift */,
-				E265E01D21B6F54500F2FD5A /* Cursus.swift */,
-				E265E01C21B6F54400F2FD5A /* Module.swift */,
-				E265E01B21B6F54400F2FD5A /* Resultat.swift */,
 				E265E02121B6F56900F2FD5A /* ModuleTableViewController.swift */,
+				E2BCA72321BFD0C90087A49C /* Cursus.swift */,
+				E2BCA72221BFD0C80087A49C /* Module.swift */,
+				E2BCA72421BFD0C90087A49C /* Resultat.swift */,
 			);
 			path = TopBar;
 			sourceTree = "<group>";
@@ -269,10 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E265DFEC21B6ED1100F2FD5A /* AppDelegate.swift in Sources */,
-				E265E01F21B6F54500F2FD5A /* Module.swift in Sources */,
-				E265E01E21B6F54500F2FD5A /* Resultat.swift in Sources */,
+				E2BCA72721BFD0C90087A49C /* Resultat.swift in Sources */,
+				E2BCA72521BFD0C90087A49C /* Module.swift in Sources */,
 				E265E02221B6F56900F2FD5A /* ModuleTableViewController.swift in Sources */,
-				E265E02021B6F54500F2FD5A /* Cursus.swift in Sources */,
+				E2BCA72621BFD0C90087A49C /* Cursus.swift in Sources */,
 				E265E01A21B6F10200F2FD5A /* TestTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
