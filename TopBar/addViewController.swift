@@ -15,6 +15,8 @@ class addViewController: UIViewController {
     @IBOutlet weak var parcours: UITextField!
     @IBOutlet weak var credit: UITextField!
     @IBOutlet weak var resultat: UITextField!
+    
+    var pk:Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +28,8 @@ class addViewController: UIViewController {
                 
                     var mod: Module = Module.init(sigle: sigle.text!, categorie: categorie.text!, credit: Int(credit.text!)!, resultat: Resultat(rawValue: Int(resultat.text!)!)!,parcours: parcours.text!)
                 
-                    //destinationVC.mod = mod
+                    destinationVC.mod = mod
+                    destinationVC.pk = self.pk
             }
         }
     }

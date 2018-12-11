@@ -30,15 +30,27 @@ class initialViewController: UIViewController {
     var tableExist = false
     let cursus:Cursus = Cursus()
     
-    //var mod:Module = Module()
+    var mod:Module = Module()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         print("--> viewDidload debut")
-       /* if mod.sigle != "?" && mod.categorie != "?" && mod.parcours != "?" {
+        do {
+            let documentDirectory = try FileManager.default.url(for: .documentDirectory, in: .userDomainMask, appropriateFor: nil, create: true)
+            let fileUrl = documentDirectory.appendingPathComponent("module").appendingPathExtension("sqlite3")
+            let base = try Connection(fileUrl.path)
+            self.database = base;
+        }
+        catch {
+            print(error)
+        }
+        
+        
+        
+        if mod.sigle != "?" && mod.categorie != "?" && mod.parcours != "?" {
             let insert = self.module_table.insert(self.module_id <- getPK(),self.module_sigle <- self.mod.sigle, self.module_categorie <- self.mod.categorie, self.module_parcours <- self.mod.parcours, self.module_credit <- self.mod.credit,self.module_resultat <- self.mod.resultat.rawValue)
             do {
+                
                 try self.database.run(insert)
                 print("Insert ok")
             }
@@ -46,7 +58,7 @@ class initialViewController: UIViewController {
                 print (error)
             }
         }
-   */ }
+    }
         
     @IBAction func createTable() {
         print("--> createTableModule debut")
@@ -134,6 +146,12 @@ class initialViewController: UIViewController {
                 
                 
                 
+            }
+            
+        }
+        if segue.identifier == "segue0" {
+            if let destinationVC = segue.destination as? addViewController {
+                destinationVC.pk = self.pk
             }
         }
     }
